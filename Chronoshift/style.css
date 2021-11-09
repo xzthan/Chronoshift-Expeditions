@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(216, 218, 211);
+    margin: 0;
+    font-size: 16px;
+    font-family: Courier New;
+}
+
+h1 {
+    font-family: Courier New;
+    color: white;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    align-self: center;
+    justify-self: center;
+}
+
+h2,
+h4,
+h5,
+h6 {
+    font-family: Courier New;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: Courier New;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+    z-index: 999;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin: 0;
+    padding: 100;
+    background: rgb(104, 124, 104);
+    font-family: Courier New;
+}
+
+header nav ul li a {
+    font-size: 16;
+    padding: 1em;
+    background: rgb(104, 124, 104);
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color ease 200ms, background ease 200ms;
+}
+
+header nav ul li a.active {
+    color: white;
+    background: rgb(66, 78, 66);
+}
+
+header nav ul li a:hover {
+    background: rgb(66, 78, 66);
+    color: white;
+}
+
+.hero {
+    flex-wrap: wrap;
+    height: 60vh;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#index .hero {
+    background-image: url(images/pexels-photo-1216345.jpeg);
+}
+
+#about .hero {
+    background-image: url(images/pexels-photo-136740.jpeg);
+}
+
+#exped .hero {
+    background-image: url(images/pexels-photo-1072179.jpeg);
+}
+
+#rules .hero {
+    background-image: url(images/pexels-photo-1376201.jpeg);
+}
+
+#book .hero {
+    background-image: url(images/pexels-photo-1407305.jpeg);
+}
+
+.warning {
+    justify-content: center;
+    position: relative;
+    transform: translate(0px, 100px);
+    width: 90vw;
+    height: 30px;
+    border: 1px solid rgb(250, 194, 162);
+    padding: 5px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.single {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    flex-direction: column;
+    position: relative;
+    font-size: 25px;
+}
+
+.fourths {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 80px;
+    flex-direction: row;
+    position: relative;
+    font-size: 30px;
+}
+
+.bbutn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(86, 98, 70);
+    background-color: rgb(86, 98, 70);
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.bbutn:hover {
+    color: white;
+}
+
+.halves {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px;
+    align-content: space-between;
+    justify-content: space-between;
+    text-justify: center;
+}
+
+.pichalf {
+    display: flex;
+    flex-wrap: wrap;
+    background-position-x: center;
+    background-size: cover;
+    padding: 80px;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+    text-justify: center;
+    background-color: rgb(86, 98, 70);
+}
+
+.pichalf .pic1 {
+    background-image: url(images/pexels-photo-1054222.jpeg);
+    width: 890px;
+    height: 350px;
+    text-decoration: none;
+}
+
+.pichalf .pic2 {
+    background-image: url(images/justice-law-case-hearing-159832.jpeg);
+    width: 890px;
+    height: 350px;
+}
+
+.pictext {
+    color: rgb(177, 199, 173);
+    transform: translate(0px, 150px);
+}
+
+.ovtext {
+    text-decoration: none;
+}
+
+.scrollbar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    background-color: rgb(164, 194, 165);
+}
+
+.scrollbar .scrimg {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    padding: 13px;
+}
+
+.halves {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+    position: relative;
+    font-size: 25px;
+    background-color: rgb(236, 226, 208);
+}
+
+.halfpt {
+    width: 890px;
+}
+
+.fhalves {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 25px;
+}
+
+.ffirst {
+    padding: 80px;
+    padding-left: 80px;
+    font-size: small;
+    align-content: center;
+    background-color: rgb(177, 199, 173);
+}
+
+.fsec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px;
+    width: 2000px;
+    background-color: rgb(217, 217, 217);
+}
+
+#mail {
+    width: 1325px;
+    height: 50px;
+    background-color: white;
+    font-family: Courier New;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#msub {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-color: black;
+    font-family: Courier New;
+    font-size: 25px;
+}
+
+.abhalf {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 80px;
+    align-content: space-between;
+    justify-content: space-between;
+    text-justify: center;
+}
+
+.biograph {
+    font-size: 24px;
+    width: 400px;
+}
+
+#btitle {
+    transform: translate(0px, 60px);
+}
+
+.fifths {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+    width: 100%;
+    background-color: rgb(236, 226, 208);
+    font-size: 30px;
+}
+
+.thirds {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: rgb(164, 194, 165);
+    font-size: 30px;
+}
+
+.ptthird {
+    width: 600px;
+}
+
+#regform {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    flex-direction: column;
+    position: relative;
+    font-size: 25px;
+    background-color: rgb(164, 194, 165);
+}
+
+#legname {
+    width: 1690px;
+    height: 50px;
+    background-color: white;
+    font-family: Courier New;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#subbut {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-color: black;
+    font-family: Courier New;
+    font-size: 25px;
+}
+
+.testim {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 80px;
+    flex-direction: column;
+    position: relative;
+    font-size: 30px;
+    background-color: rgb(236, 226, 208);
+}
+
+.tmon {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    font-size: 30px;
+}
+
+.tmonart {
+    width: 400px;
+}
+
+#reginf {
+    width: 1800px;
+    height: 50px;
+    background-color: white;
+    font-family: Courier New;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.bbutn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(86, 98, 70);
+    background-color: rgb(86, 98, 70);
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+#regsub {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-color: black;
+    font-family: Courier New;
+    font-size: 25px;
+}
+
+#regres {
+    width: 150px;
+    height: 50px;
+    border-color: black;
+    background-color: rgb(86, 98, 70);
+    font-family: Courier New;
+    color: white;
+    font-size: 25px;
+}
+
+#regexp1 {
+    width: 310px;
+    height: 50px;
+    background-color: white;
+    border-color: black;
+    font-family: Courier New;
+    font-size: 25px;
+}
+
+#regexp2 {
+    width: 340px;
+    height: 50px;
+    background-color: white;
+    border-color: black;
+    font-family: Courier New;
+    font-size: 25px;
+}
+
+.bios {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 80px;
+    flex-direction: column;
+    position: relative;
+    font-size: 30px;
+}
